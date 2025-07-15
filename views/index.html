@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBurger - Cardápio Digital</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/images/logo_devburguer.png" alt="Logo DevBurger" style="max-width: 150px; height: auto; margin-bottom: 10px;">
+        <h1>Bem-vindo à DevBurger!</h1>
+        <p>Seu cardápio digital de hamburgueres gourmet.</p>
+    </header>
+
+    <main>
+        <section id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div>
+                <h3>DevBurger Clássico</h3>
+                <p>Pão brioche, Carne 150g, Queijo cheddar, Alface americana, Tomate fresco, Molho especial.</p>
+            </div>
+            <div>
+                <h3>Burger de Bacon</h3>
+                <p>Pão australiano, Carne 180g, Queijo prato, Bacon crocante, Cebola caramelizada, Molho barbecue.</p>
+            </div>
+            <div>
+                <h3>Commit Veggie</h3>
+                <p>Pão integral, Burger de grão de bico, Queijo vegano, Rúcula, Tomate seco, Maionese de ervas.</p>
+            </div>
+        </section>
+
+        <section id="sugestao-form">
+            <h2>Sugira um Novo Lanche!</h2>
+            <form action="/sugestao" method="GET">
+                <label for="nome-lanche">Nome do Lanche:</label><br>
+                <input type="text" id="nome-lanche" name="nome" required><br><br>
+
+                <label for="ingredientes-lanche">Ingredientes (separe por vírgulas):</label><br>
+                <textarea id="ingredientes-lanche" name="ingredientes" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar Sugestão</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Links Úteis:</p>
+        <ul>
+            <li><a href="/contato">Fale Conosco</a></li>
+            <li><a href="/api/lanches">Ver Lanches (API)</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
